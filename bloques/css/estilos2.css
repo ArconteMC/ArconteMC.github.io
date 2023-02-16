@@ -7,14 +7,20 @@
 }
 
 body{
-    background: #EAEBEF;
     font-family: 'Poppins', sans-serif;
-}
+    background-repeat: no-repeat;
+    background-size: 100% 100%  ;
+    background-attachment: fixed;
+
+}   
 
 .nav{
-    width: 300px;
+    width: 350px;
+    height: 700px;
+    margin-top: -50px;
+    margin-right: -45px;
+    float:left
 }
-
 .nav__link{
     color: #303440;
     display: block;
@@ -29,17 +35,18 @@ body{
 }
 
 .nav__link--inside:hover{
-    background: #F6F8FA;
+    background: #c1b267;
 }
 
 .list{
-    width: 100%;
+    width: 75%;
     height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     border-radius: 0 16px 16px 0;
-    background: #fff;
+    background: #ffffff;
+    opacity: 0.5;
 }
 
 .list__item{
@@ -77,4 +84,79 @@ body{
     list-style: none;
     transition: height .4s;
     height: 0;
+}
+#contenedor{
+    width: 960px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+header{
+    height: 150px;
+}
+header h1 {
+    font-size: 50px;
+    text-align: center;
+ 
+}
+nav{
+    height: 60px;
+    margin-top:-50px;
+   
+}
+
+nav h2 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#contenido {
+    width: 540px;
+    height: 650px;
+    float:left;
+    background:rgb(214, 251, 4);
+    margin-right: -400px;
+    margin-left: -200px;
+    margin-top: 50px;
+    opacity: 0.8;
+    
+}   
+#contenido h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 500px;
+    
+}
+aside {
+    width: 555px;
+    height: 650px;
+    background: rgb(255, 0, 247);
+    margin-right: -460px;
+    margin-top: 50px;
+    float:right;
+    opacity: 0.8;
+}
+aside h2{
+    font-size: 30px;
+    text-align: center;
+    line-height: 500px;
+    
+}
+footer{ 
+    width: 1620px;
+    height: -20px;
+    background: #002afd;
+    clear: both;
+    margin-top: 100px;
+    margin-left: -200px;
+    opacity: 0.7;
+}
+footer h2{
+    font-size: 40px;
+    text-align: center;
+    font-style:italic;
+
+
 }

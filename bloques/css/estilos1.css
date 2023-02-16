@@ -148,13 +148,12 @@ aside h2{
     
 }
 footer{ 
-    width: 1850px;
+    width: 1620px;
     height: -20px;
     background: #d01818;
     clear: both;
     margin-top: 100px;
-    margin-left: -450px;
-    margin-right: -6000px;
+    margin-left: -200px;
     opacity: 0.7;
 }
 footer h2{

@@ -97,14 +97,9 @@ nav{
 
 }
 .ilustrado1 {
-    display: flex;
-    justify-content: center;
+    font-size:large;
+    font-weight: 900;
+
+
 }
 
-.imagen{
-    width: 0px;
-    height: 300px;
-    margin-left: 20px;
-    margin-right: 800px;
- 
-}
