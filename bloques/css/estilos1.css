@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: 100% 100%  ;
+    background-attachment: fixed;
+
+}   
+
+
+.nav{
+    width: 350px;
+    height: 700px;
+    margin-top: -50px;
+    margin-right: -45px;
+    float:left
+}
+
+.nav__link{
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: 6px ;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: #F6F8FA;
+}
+
+.list{
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: #dcb90c;
+    opacity: 0.7;
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+
+}
+#contenedor{
+    width: 960px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+header{
+    height: 150px;
+}
+header h1 {
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+nav{
+    height: 60px;
+   
+}
+
+nav h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#contenido {
+    width: 540px;
+    height: 710px;
+    float:left;
+    background:rgb(7, 58, 241);
+    margin-right: -400px;
+    margin-left: -30px;
+    margin-top: 10px;
+    opacity: 0.8;
+    
+}   
+#contenido h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 500px;
+    
+}
+aside {
+    width: 555px;
+    height: 710px;
+    background: green;
+    margin-right: -200px;
+    margin-top: 10px;
+    float:right;
+    opacity: 0.8;
+}
+aside h2{
+    font-size: 30px;
+    text-align: center;
+    line-height: 500px;
+    
+}
+footer{ 
+    width: 1370px;
+    height: 100px;
+    background: #d01818;
+    clear: both;
+    margin-top: 100px;
+    margin-left: -210px;
+    margin-right: 100px;
+    opacity: 0.7;
+}
+footer h2{
+    font-size: 40px;
+    text-align: center;
+    font-style:italic;
+
+
+}
