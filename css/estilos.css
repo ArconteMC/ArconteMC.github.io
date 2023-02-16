@@ -16,10 +16,9 @@ body{
 
 
 nav{
-    width: 300px;
+    width: 350px;
     height: 400px;
-    margin-top: 0px;
-    margin-right: 30px;
+    margin-right: 100px;
     float:left
 }
 
@@ -42,7 +41,7 @@ nav{
 }
 
 .list{
-    width: 100%;
+    width: 75%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -103,6 +102,9 @@ nav{
 }
 
 .imagen{
-    width: 300px;
+    width: 0px;
     height: 300px;
+    margin-left: 20px;
+    margin-right: 800px;
+ 
 }
