@@ -101,11 +101,18 @@ header{
 header h1 {
     font-size: 50px;
     text-align: center;
+<<<<<<< HEAD
     line-height: 50px;
 }
 nav{
     height: 60px;
    
+=======
+    line-height: 150px;
+}
+nav{
+    height: 60px;
+>>>>>>> 6b78d89a4ead8678518c59ba60211e369e850341
 }
 
 nav h2 {
@@ -115,6 +122,7 @@ nav h2 {
 }
 
 #contenido {
+<<<<<<< HEAD
     width: 540px;
     height: 710px;
     float:left;
@@ -124,11 +132,20 @@ nav h2 {
     margin-top: 10px;
     opacity: 0.8;
     
+=======
+    width: 10px;
+    height: 500px;
+    float: left;
+    background:rgb(11, 168, 53);
+    margin-top: 10px;
+    margin-right:10px
+>>>>>>> 6b78d89a4ead8678518c59ba60211e369e850341
 }   
 #contenido h2 {
     font-size: 40px;
     text-align: center;
     line-height: 500px;
+<<<<<<< HEAD
     
 }
 aside {
@@ -155,6 +172,27 @@ footer{
     margin-left: -210px;
     margin-right: 100px;
     opacity: 0.7;
+=======
+}
+aside {
+    width: 250px;
+    height: 500px;
+    background: green;
+    margin-right: -80px;
+    margin: top 10px;
+    float:right;
+}
+footer h2{
+    font-size: 40px;
+    text-align: center;
+    line-height: 500px;
+}
+footer{ 
+    background: #d01818;
+    clear: both;
+    margin-left: 60px;
+    margin-right: -200px;
+>>>>>>> 6b78d89a4ead8678518c59ba60211e369e850341
 }
 footer h2{
     font-size: 40px;
