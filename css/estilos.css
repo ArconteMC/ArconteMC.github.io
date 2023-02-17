@@ -37,7 +37,7 @@ nav{
 }
 
 .nav__link--inside:hover{
-    background: #85a9e7;
+    background: #02eeff;
 }
 
 .list{
@@ -47,7 +47,7 @@ nav{
     justify-content: center;
     flex-direction: column;
     border-radius: 0 16px 16px 0;
-    background: #0beadf;
+    background: #f9bf00;
     opacity: 0.7;
 }
 
@@ -99,7 +99,10 @@ nav{
 .ilustrado1 {
     font-size:large;
     font-weight: 900;
+}
 
-
+.imagen{
+    margin: 61px 54px 48px 440px;
+    width: 800px;
 }
 

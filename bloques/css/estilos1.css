@@ -47,7 +47,7 @@ body{
     justify-content: center;
     flex-direction: column;
     border-radius: 0 16px 16px 0;
-    background: #dcb90c;
+    background: #00f2ff;
     opacity: 0.7;
 }
 
@@ -104,9 +104,8 @@ header h1 {
  
 }
 nav{
-    height: 60px;
-    margin-top:-50px;
-   
+    height: 360px;
+    margin-top: 5px;
 }
 
 nav h2 {
@@ -116,44 +115,41 @@ nav h2 {
 }
 
 #contenido {
-    width: 540px;
-    height: 710px;
+    width: 450px;
+    height: 610px;
     float:left;
-    background:rgb(7, 58, 241);
-    margin-right: -400px;
-    margin-left: -30px;
-    margin-top: 10px;
+    margin-right: -500px;
+    margin-left: -20px;
+    margin-top: -280px;
     opacity: 0.8;
     
 }   
 #contenido h2 {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    line-height: 500px;
+    line-height: 50px;
     
 }
 aside {
-    width: 555px;
-    height: 710px;
-    background: green;
-    margin-right: -200px;
-    margin-top: 10px;
+    width: 450px;
+    height: 610px;
+    margin-right: -100px;
+    margin-top: -280px;
     float:right;
     opacity: 0.8;
 }
 aside h2{
     font-size: 30px;
     text-align: center;
-    line-height: 500px;
+    line-height: 50px;
     
 }
 footer{ 
-    width: 1620px;
-    height: -20px;
-    background: #d01818;
+    width: 935px;
+    height: -200px;
     clear: both;
-    margin-top: 100px;
-    margin-left: -200px;
+    margin-top: -500px;
+    margin-left: 125px;
     opacity: 0.7;
 }
 footer h2{
