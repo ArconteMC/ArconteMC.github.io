@@ -13,14 +13,6 @@ body{
     background-attachment: fixed;
 
 }   
-
-.tema{
-    width: 50px;
-    margin-left: 5px;
-    margin-bottom: -0px;
-    display:flex;
-    text-decoration: none;
-}
 .nav{
     width: 370px;
     height: 620px;
@@ -50,7 +42,7 @@ body{
 
 .list{
     width: 75%;
-    height: 160%;
+    height: 180%;
     right: 0px;    
     display: flex;
     border-radius: 0px 120px 100px 0px; 
@@ -87,10 +79,11 @@ body{
     margin-left: auto;
     transition: transform .3s;
 }
-.lista.img1{
-    margin-bottom: -5000px;
+.list.img1{
+    float: right;
 }
 .list__show{
+    float: right;
     width: 80%;
     margin-left: auto;
     border-left: 2px solid #303440;
@@ -99,6 +92,95 @@ body{
     height: 0;
 }
 
+.list__inside{
+    display: inline-flexbox;
+}
+
+.section{
+    text-decoration: none;
+    color: #000;
+}
+
+.home{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;
+    margin-right: 280px;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    text-align: center;
+    margin-top: 70px;
+    font-size: 45px;
+    display: flex;
+    margin-right: -200px;
+    margin-left: -255px;
+    -webkit-text-stroke: 2px black;
+}
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.logo{
+    float: right;
+    width: 150px;
+    height: 150px;
+    margin-top: 60px;
+    margin-right: 20px;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+    
+.reloj{  
+    font-family:'Times New Roman', Times, serif;
+    color: #030303;
+    text-align: center;
+    float: left;
+    margin-top: 120px;
+    margin-left: -320px;
+    transform: translate(-50%,-50%);
+   
+}
+.fecha{    
+    letter-spacing: 0.1em;
+    font-size: 15px;
+}
+    
+.tiempo{
+    letter-spacing: 0.1em;
+    font-size: 17px;
+}
+.inicio{
+    margin-left: -15px;
+    margin-top: 115px;
+}
+
+.video{
+    margin-left: 120px;
+}
+.contar{
+    margin-top: 615px;
+    float: right;
+    margin-right: 25px;
+}
+.conteo{
+    margin-top: 40px;
+    text-align: right;
+    color: #040404;
+    font-size: 30px;
+    -webkit-text-stroke: 0.2px rgb(255, 149, 0);
+}
 #contenedor{
     width: 900px;
     margin: auto;
@@ -122,38 +204,39 @@ nav{
 
 nav h2 {
     font-size: 20px;
-    text-align: center;
-    line-height: 20px;
+    text-align: left;
 }
 
 #contenido {
     width: 450px;
     height: 545px;
     float:left;
-    background-color: darkmagenta;
-    margin-right: -500px;
-    margin-left: -20px;
+    margin-right: -800px;
+    margin-left: 50px;
     margin-top: -180px;
-    opacity: 0.8;
     
 }   
 #contenido h2 {
-    font-size: 30px;
-    text-align: center;
-    line-height: 50px;
+    font-size: 23px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+ 
     
 }
+ .imagen{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+ }
 aside {
     width: 450px;
     height: 545px;
     margin-right: -100px;
     margin-top: -180px;
     float:right;
-    background-color:blue;
-    opacity: 0.5;
 }
 aside h2{
-    font-size: 30px;
-    text-align: center;
-    line-height: 50px;
+    font-size: 23px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
 }
