@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: 100% 100%  ;
+    background-attachment: fixed;
+
+}   
+
+.tema{
+    width: 50px;
+    margin-left: 5px;
+    margin-bottom: -0px;
+    display:flex;
+    text-decoration: none;
+}
+.nav{
+    width: 370px;
+    height: 620px;
+    margin-left: -30px;
+    margin-top: -50px;
+    margin-right: -45px;
+    float:left
+}
+
+.nav__link{
+
+    color: #000000;
+    display:block;
+    padding: 7px 0px;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: -50px ;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: #ffffff;
+}
+
+.list{
+    width: 75%;
+    height: 160%;
+    right: 0px;    
+    display: flex;
+    border-radius: 0px 120px 100px 0px; 
+    justify-content: center;
+    flex-direction: column;
+    background-color: chocolate;
+    opacity: 0.9;
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+.lista.img1{
+    margin-bottom: -5000px;
+}
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+#titulo{
+    width: 900px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+header{
+    height: 200px;
+    margin-right: -170px;
+}
+
+header h1 {
+    font-size: 70px;
+    text-align: center;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+ 
+}
+header h2{
+   font-size: 40px;
+  -webkit-text-stroke: 1.5px #000000;
+}
+ iframe{
+    display: flex;
+    width: 950px;
+    height: 730px;
+    margin-left: 10%;
+ }

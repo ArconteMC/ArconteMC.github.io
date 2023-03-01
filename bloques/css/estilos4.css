@@ -12,37 +12,52 @@ body{
     background-size: 100% 100%  ;
     background-attachment: fixed;
 
-}
+}   
 
+.tema{
+    width: 50px;
+    margin-left: 5px;
+    margin-bottom: -0px;
+    display:flex;
+    text-decoration: none;
+}
 .nav{
-    width: 300px;
+    width: 370px;
+    height: 620px;
+    margin-left: -30px;
+    margin-top: -50px;
+    margin-right: -45px;
+    float:left
 }
 
 .nav__link{
-    color: #303440;
-    display: block;
-    padding: 15px 0;
+
+    color: #000000;
+    display:block;
+    padding: 7px 0px;
     text-decoration: none;
 }
 
 .nav__link--inside{
-    border-radius: 6px ;
-    padding-left: 20px;
+    border-radius: -50px ;
+    padding-left: 30px;
     text-align: left;
 }
 
 .nav__link--inside:hover{
-    background: #F6F8FA;
+    background: #ffffff;
 }
 
 .list{
-    width: 100%;
-    height: 100vh;
+    width: 75%;
+    height: 160%;
+    right: 0px;    
     display: flex;
+    border-radius: 0px 120px 100px 0px; 
     justify-content: center;
     flex-direction: column;
-    border-radius: 0 16px 16px 0;
-    background: #fff;
+    background-color: chocolate;
+    opacity: 0.9;
 }
 
 .list__item{
@@ -72,7 +87,9 @@ body{
     margin-left: auto;
     transition: transform .3s;
 }
-
+.lista.img1{
+    margin-bottom: -5000px;
+}
 .list__show{
     width: 80%;
     margin-left: auto;
@@ -80,4 +97,63 @@ body{
     list-style: none;
     transition: height .4s;
     height: 0;
+}
+
+#contenedor{
+    width: 900px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+header{
+    height: 200px;
+}
+header h1 {
+    font-size: 70px;
+    text-align: center;
+    -webkit-text-stroke: 1.5px black;
+ 
+}
+nav{
+    height: 360px;
+    margin-top: 5px;
+}
+
+nav h2 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#contenido {
+    width: 450px;
+    height: 545px;
+    float:left;
+    background-color: darkmagenta;
+    margin-right: -500px;
+    margin-left: -20px;
+    margin-top: -180px;
+    opacity: 0.8;
+    
+}   
+#contenido h2 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    
+}
+aside {
+    width: 450px;
+    height: 545px;
+    margin-right: -100px;
+    margin-top: -180px;
+    float:right;
+    background-color:blue;
+    opacity: 0.5;
+}
+aside h2{
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
 }

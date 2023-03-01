@@ -14,39 +14,50 @@ body{
 
 }   
 
+.tema{
+    width: 50px;
+    margin-left: 5px;
+    margin-bottom: -0px;
+    display:flex;
+    text-decoration: none;
+}
 .nav{
-    width: 350px;
-    height: 700px;
+    width: 370px;
+    height: 620px;
+    margin-left: -30px;
     margin-top: -50px;
     margin-right: -45px;
     float:left
 }
+
 .nav__link{
-    color: #303440;
-    display: block;
-    padding: 15px 0;
+
+    color: #000000;
+    display:block;
+    padding: 7px 0px;
     text-decoration: none;
 }
 
 .nav__link--inside{
-    border-radius: 6px ;
-    padding-left: 20px;
+    border-radius: -50px ;
+    padding-left: 30px;
     text-align: left;
 }
 
 .nav__link--inside:hover{
-    background: #c1b267;
+    background: #ffffff;
 }
 
 .list{
     width: 75%;
-    height: 100vh;
+    height: 160%;
+    right: 0px;    
     display: flex;
+    border-radius: 0px 120px 100px 0px; 
     justify-content: center;
     flex-direction: column;
-    border-radius: 0 16px 16px 0;
-    background: #ffffff;
-    opacity: 0.5;
+    background-color: chocolate;
+    opacity: 0.9;
 }
 
 .list__item{
@@ -76,7 +87,9 @@ body{
     margin-left: auto;
     transition: transform .3s;
 }
-
+.lista.img1{
+    margin-bottom: -5000px;
+}
 .list__show{
     width: 80%;
     margin-left: auto;
@@ -85,24 +98,26 @@ body{
     transition: height .4s;
     height: 0;
 }
+
 #contenedor{
-    width: 960px;
+    width: 900px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 20px;
 }
 header{
-    height: 150px;
+    height: 200px;
 }
 header h1 {
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
+    -webkit-text-stroke: 1.5px black;
  
 }
 nav{
-    height: 400px;
-    margin-top: -60px;
+    height: 360px;
+    margin-top: 5px;
 }
 
 nav h2 {
@@ -113,12 +128,12 @@ nav h2 {
 
 #contenido {
     width: 450px;
-    height: 610px;
+    height: 545px;
     float:left;
-    background-color: gold;
+    background-color: darkmagenta;
     margin-right: -500px;
     margin-left: -20px;
-    margin-top: -280px;
+    margin-top: -180px;
     opacity: 0.8;
     
 }   
@@ -130,32 +145,15 @@ nav h2 {
 }
 aside {
     width: 450px;
-    height: 610px;
-    background-color: darkorchid;
+    height: 545px;
     margin-right: -100px;
-    margin-top: -280px;
+    margin-top: -180px;
     float:right;
-    opacity: 0.8;
+    background-color:blue;
+    opacity: 0.5;
 }
-
 aside h2{
     font-size: 30px;
     text-align: center;
     line-height: 50px;
-    
-}
-footer{ 
-    width: 935px;
-    height: -200px;
-    clear: both;
-    margin-top: -500px;
-    margin-left: 125px;
-    opacity: 0.7;
-}
-footer h2{
-    font-size: 40px;
-    text-align: center;
-    font-style:italic;
-
-
 }
