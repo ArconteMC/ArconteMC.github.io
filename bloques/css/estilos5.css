@@ -13,51 +13,61 @@ body{
     background-attachment: fixed;
 
 }   
-
-.tema{
-    width: 50px;
-    margin-left: 5px;
-    margin-bottom: -0px;
-    display:flex;
-    text-decoration: none;
-}
 .nav{
-    width: 370px;
-    height: 620px;
-    margin-left: -30px;
-    margin-top: -50px;
-    margin-right: -45px;
-    float:left
+    position: fixed;
+    height: 10%;
+    top: 0;
+    width: 270px;
+    margin-left: -35px;
+    margin-bottom: 5px;
+    transform: translateX(-270px);
+    transition: transform 0.3s;
+}
+
+.nav--show{
+    transform: translateX(0);
+}
+.toggle-menu {
+    position: absolute;
+    top: -15px;
+    left: 300px;
+    width: 20px;
+    height: 20px;
+    padding: 1rem;
+}
+@media screen and (min-width: 1024px) {
+    .toggle-menu{
+        display: none;
+    }
 }
 
 .nav__link{
-
     color: #000000;
     display:block;
-    padding: 7px 0px;
+    padding: 8px 0px;
     text-decoration: none;
 }
 
 .nav__link--inside{
-    border-radius: -50px ;
-    padding-left: 30px;
+    border-radius: 5px ;
+    padding-left: 35px;
     text-align: left;
 }
 
 .nav__link--inside:hover{
-    background: #ffffff;
+    background: rgb(0, 234, 255);
 }
 
 .list{
-    width: 75%;
-    height: 160%;
-    right: 0px;    
-    display: flex;
-    border-radius: 0px 120px 100px 0px; 
+    width: 100%;
+    height: 100vh;
+    display:flex;
     justify-content: center;
     flex-direction: column;
+    border-radius: 0px 50px 5px 0px; 
     background-color: chocolate;
     opacity: 0.9;
+    font-size: 15px;
 }
 
 .list__item{
@@ -74,7 +84,7 @@ body{
 .list__button{
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 0.3em;
     width: 70%;
     margin: 0 auto;
 }
@@ -87,140 +97,105 @@ body{
     margin-left: auto;
     transition: transform .3s;
 }
-.lista.img1{
-    margin-bottom: -5000px;
-}
 .list__show{
+    float: right;
     width: 80%;
     margin-left: auto;
-    border-left: 2px solid #303440;
+    border-left: 2px solid #047e00;
     list-style: none;
     transition: height .4s;
     height: 0;
 }
+
 .list__inside{
-    display: inline-flexbox;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.section{
-    text-decoration: none;
-    color: #000;
-}
-
-.home{
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin-top: 80px;
-    margin-right: 280px;
-}
-.parent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-.div1 { 
-    grid-area: 1 / 1 / 2 / 2; 
-    text-align: center;
-    margin-top: 70px;
-    font-size: 45px;
+.encabezado {
     display: flex;
-    margin-right: -200px;
-    margin-left: -100px;
-    -webkit-text-stroke: 2px black;
+    height: 20vh;
+    margin-right: 15px;
+    margin-top: 15px;
 }
-.div2 {
-    grid-area: 1 / 2 / 2 / 3;
+
+.inicio{
+    color: coral;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+}
+.home{
+    display: flex;
+    height: 50%;;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.imagen1{
+    width: 100%;
+    height: 100%;    
+}
+
+.tema{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:100%;
+    margin-top: 5px;
+    flex: 2.5;
+    font-size: 30px;
+    -webkit-text-stroke: 1.5px black;
 }
 .logo{
-    float: right;
-    width: 150px;
-    height: 150px;
-    margin-top: 60px;
-    margin-right: 20px;
+    display: flex;
+    height: 75%;
+    margin-top: 20px;
 }
 
-p{
-    margin: 0;
-    padding: 0;
+.imagen2{
+    width:  100%;
+    height: 100%;
 }
-    
-.reloj{  
-    font-family:'Times New Roman', Times, serif;
-    color: #030303;
-    text-align: center;
-    float: left;
-    margin-top: 120px;
-    margin-left: -320px;
-    transform: translate(-50%,-50%);
-   
+.contenido{
+    display: flex;
+    height: 70vh;
+    margin-right: 15px;
+    margin-top: 20px;
 }
-.fecha{    
-    letter-spacing: 0.1em;
-    font-size: 15px;
-}
-    
-.tiempo{
-    letter-spacing: 0.1em;
-    font-size: 17px;
-}
-.inicio{
-    margin-left: -15px;
-    margin-top: 115px;
+.texto_intro{
+    font-size: 13px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 5%;
 }
 
-.video{
-    margin-left: 120px;
-}
-.contar{
-    margin-top: 615px;
-    float: right;
-    margin-right: 25px;
-}
-.conteo{
-    margin-top: 40px;
-    text-align: right;
-    color: #040404;
-    font-size: 30px;
-    -webkit-text-stroke: 0.2px rgb(255, 149, 0);
-}
-#titulo{
-    width: 900px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
-header{
-    height: 200px;
-    margin-right: -170px;
-}
-
-header h2 {
-    margin-top: 15px;
-    font-size: 70px;
-    text-align: left;
-    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
-    margin-bottom: 100%;
- 
-}
 .contenedor{
-    margin-left: 450px;
+    display: flex;
+    margin-top: 20%;
+    margin-left: 0px;
 }
 .opciones__grid{
+    display: flex;
     display: grid;
     width: 50px;
     grid-template-areas: 
-    "img1 img2"
-    "img3 img4";
-    gap: 100px;
+    "img1 img2 img3";
+    gap: 30px;
+}
+
+.subtema{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    -webkit-text-stroke: 1px black;
 }
 .contenedor figure{
     position: relative;
-    height: 300px;
+    height: 400px;
     width: 300px;
     overflow: hidden;
     border-radius: 20px;
@@ -228,17 +203,19 @@ header h2 {
     cursor: pointer;
 }
 .contenedor figure img{
+    display: flex;
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
 }
 
 .contenedor figure .capa{
+    display: flex;
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 0, 0, 0.452);
+    background: rgba(38, 0, 255, 0.396);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
@@ -263,3 +240,329 @@ header h2 {
     a{
         text-decoration: none;
     }
+
+
+@media screen and (min-width: 768px) {
+    .nav{
+        transform: translateX(-270);
+    }
+    .list__img{
+        transform: translateX(0);
+    }
+    .logo{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav{
+        transform: translateX(0);
+    }   
+}
+
+.main{
+    margin-right: 25px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .main{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main{
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    iframe{
+        display: flex;
+        width: 160%;
+    }
+}
+
+@media  screen and ( max-width:912px) {
+    .texto_intro{
+        font-size:100%;
+        margin-top: -25px;
+    }
+    .logo{
+        width: 20%;
+        height: 60%;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: -20px;
+    }
+    .tema_bloque{
+        font-size: 150%;
+    }
+    iframe{
+        display: flex;
+        width: 160%;
+        height: 50%;
+    }
+    .list{
+        height: 70vh;
+    }
+    .conquista1{
+        width: 150px;
+        height: 150px;
+    }
+    .conquista2{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1255px){
+    .contenedor figure{
+        position: relative;
+        height: 380px;
+        width: 280px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .contenedor figure{
+        position: relative;
+        height: 350px;
+        width: 250px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 1105px){
+    .contenedor figure{
+        position: relative;
+        height: 320px;
+        width: 220px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 950px){
+    .contenedor figure{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 880px){
+    .contenedor figure{
+        position: relative;
+        height: 280px;
+        width: 180px;
+        margin-left: 50%;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 800px){
+    .contenedor figure{
+        position: relative;
+        height: 260px;
+        width: 160px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 725px){
+    .contenedor figure{
+        position: relative;
+        height: 240px;
+        width: 140px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 650px){
+    .contenedor figure{
+        position: relative;
+        height: 220px;
+        width: 120px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 570px){
+    .contenedor figure{
+        position: relative;
+        height: 200px;
+        width: 100px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+}
+
+@media  screen and ( max-width:820px) {
+    .texto_intro{
+        font-size:100%;
+        margin-top: -10px;
+    }
+    .logo{
+        width: 20%;
+        height: 50%;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: -20px;
+    }
+    .list{
+        height: 78vh;
+    }
+    .tema_bloque{
+        display: flex;
+        flex-direction: column;
+    }
+    .tema_bloque{
+        font-size: 150%;
+    }
+    .list{
+        height: 100vh;
+    }
+    iframe{
+        display: flex;
+        width: 120%;
+        height: 60%;
+    }
+    .conquista1{
+        width: 100px;
+        height: 100px;
+    }
+    .conquista2{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media  screen and ( max-width:768px) {
+    .texto_intro{
+        font-size:100%;
+        margin-top: 10px;
+    }
+    .logo{
+        width: 20%;
+        height: 50%;
+    }
+    .tema_bloque{
+        font-size: 120%;
+    }
+    .list{
+        height: 90vh;
+    }
+    .texto{
+        width: 30%;
+    }
+}
+
+
+@media  screen and ( max-width:640px){
+    .tema{
+        font-size: 120%;
+    }
+    .texto_intro{
+        font-size: 70%;
+    }
+
+    .list{
+        height: 100vh;
+    }
+    .tema_bloque{
+        display: flex;
+    }
+    iframe{
+        margin-right: -50%;
+    }
+}
+
+@media screen and ( max-width: 540px){
+    .texto_intro{
+        margin-top: 20px;
+    }
+
+    .list{
+        height: 100vh;
+    }
+    .texto{
+        width: 20%;
+    }
+    .tema_bloque{
+        font-size: 70%;
+    }
+    iframe{
+        height: 70%;
+    }
+    .contenedor figure{
+        position: relative;
+        height: 200px;
+        width: 100px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+}
+@media  screen and ( max-width:470px){
+    .texto_intro{
+        font-size: 70%;
+    }
+    .tema{
+        font-size: 90%;
+        margin-left: 10px;
+    }
+    .home{
+        width: 55%;
+        height: 40%;
+    }
+    .logo{
+        width: 50%;
+        height: 50%;
+        margin-right: -12%;
+    }
+    .list{
+        height: 100vh;
+    }
+    .expo{
+        width: 55%;
+    }
+    .texto{
+        width: 30%;
+    }
+    .contenedor figure{
+        position: relative;
+        margin-left: 10%;
+        margin-top: 100%;
+        height: 200px;
+        width: 100px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 15px 25px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+ 
+}
